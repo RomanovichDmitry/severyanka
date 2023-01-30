@@ -1,0 +1,28 @@
+.map {
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__list {
+        display: flex;
+        margin-bottom: 24px;
+    }
+    &__item {
+        margin-right: 24px;
+    }
+    &__btn-togle {
+        padding: 8px 8px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    &__btn-togle--active {
+        color: #fff;
+        background-color: #70C05B;
+    }
+    #map {
+        width: 100%;
+        height: 354px;
+        margin-bottom: 120px;
+    }
+}
