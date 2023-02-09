@@ -1,13 +1,24 @@
 //Кнопка активности "В корзину"
 const btnAdd = document.querySelectorAll(`.offers__btn-add`);
 
+const addBasket = (btn) => {
+    if (!btn.classList.contains('offers__btn-add--active')) {
+        btn.textContent = `Добавлено`
+    } else {
+        btn.textContent = `В корзину`
+    }
+    btn.classList.toggle(`offers__btn-add--active`);
+}
+
+
 btnAdd.forEach((btn) => {
     btn.addEventListener(`click`, (e) => {
-        e.preventDefault();
-        btn.classList.toggle(`offers__btn-add--active`);
+        addBasket(btn);
+        const basketClasses = document.querySelectorAll(`.offers__btn-add--active`);
+        const basketCount = document.querySelector(`.header__el-ico--basket-count`);
+        basketCount.textContent = basketClasses.length
     })
-})
-
+});
 // Pop-up reg/in 
 
 const regBtn = document.querySelector(`.header__reg-or-in`);
