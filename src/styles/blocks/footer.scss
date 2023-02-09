@@ -1,5 +1,5 @@
 .footer {
-    background-image: url(./public/images/bg-footer.png);
+    background-image: url(/public/images/bg-footer.png);
     background-color: #F9F4E2;
     &__row {
         padding-top: 24px;
@@ -10,6 +10,7 @@
     }
     &__nav-list {
         display: flex;
+        gap: 40px;
     }
     &__social-list {
         display: flex;
@@ -18,10 +19,6 @@
         margin-right: 40px;
     }
     &__nav-item {
-        margin-right: 40px;
-        &:last-child {
-            margin-right: 0;
-        }
         a {
             font-size: 12px;
             line-height: 18px;
@@ -35,5 +32,20 @@
     }
     &__social-link {
         display: block;
+    }
+    @media screen and (max-width:768px) {
+        &__row {
+            flex-direction: column;
+        }
+        &__nav-list {
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        &__logo-link {
+            margin-right: 0;
+        }
     }
 }

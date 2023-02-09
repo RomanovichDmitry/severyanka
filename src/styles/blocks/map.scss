@@ -25,4 +25,18 @@
         height: 354px;
         margin-bottom: 120px;
     }
+    @media screen and (max-width:768px) {
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__list {
+            overflow-x: scroll;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        #map {
+            height: 200px;
+            margin-bottom: 40px;
+        }
+    }
 }

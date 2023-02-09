@@ -9,8 +9,8 @@
 
 // import 'lightbox2'
 // import 'lightbox2/dist/css/lightbox.min.css' //Scale IMG on click
-
-
+import './scripts/slider'
 import './styles/index.scss';
 import './scripts/script';
 import './scripts/map';
+

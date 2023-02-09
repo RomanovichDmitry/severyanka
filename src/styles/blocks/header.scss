@@ -98,4 +98,31 @@
         padding: 8px 12px;
         border-radius: 4px;
     }
+    @media screen and (max-width:768px) {
+        &__logo-link {
+            margin-right: 10px;
+            width: 40px;
+        }
+        &__row {
+            padding: 6px 0;
+        }
+        &__catalog-link {
+            display: none;
+        }
+        &__el-list {
+            display: none;
+        }
+        &__reg-or-in {
+            font-size: 14px;
+            padding: 0px 5px;
+        }
+        &__search-form {
+            margin-right: 10px;
+            font-size: 14px;
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+        
+    }
 }
